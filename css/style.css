@@ -1,0 +1,221 @@
+/*Глобальные стили - в начале файла*/
+body {
+    margin: 0; /*Разобраться*/
+    padding: 0; /*Разобраться*/
+
+    font-family: 'PT Sans Narrow', Arial, sans-serif; /*Шрифты всей страницы*/
+    font-size: 14px; /*Размер шрифта*/
+    line-height: 24px; /*Межстрочный интервал*/
+    font-weight: 700; /*Весь текст полужирный*/
+    color: #ffffff; /*Цвет текста - белый*/
+    text-transform: uppercase; /*Все буквы - заглавные*/
+
+    background-color: #000000; /*По умолчанию контрастный - чтобы видеть текст*/
+    background-image: url("../img/bg.jpg"); /*Картинка на фоне, две точки - чтобы выйти из папки CSS*/
+    background-position: top center; /*Наверху - по центру*/
+    background-repeat: no-repeat; /*Не замостить*/
+}
+
+a {
+    text-decoration: none; /*Ссылки без нижнего подчёркивания*/
+}
+
+/*Кнопушки*/
+.button {
+    font: inherit; /*Значит, что наследуется от родителя*/
+
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle; /*Выравнивание по вертикали*/
+    text-transform: uppercase;
+
+    background-color: #000000;
+    border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #663d15;
+}
+
+/*Панель навигации*/
+.main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+
+    background-color: #000000;
+}
+
+/* Отключаем буллиты (маркеры) для списков ul в шапке */
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+/* Ссылки белого цвета */
+.site-navigation a,
+.user-navigation a {
+    color: #ffffff;
+}
+
+/* Ховеры и фокусы для ссылок в верхнем меню */
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover
+.user-navigation a:focus {
+    background-color: #242424;
+}
+
+/* Отключаем маркеры у фича-листа */
+.features-list {
+    list-style: none;
+}
+
+/* Выравнивание текста в списке фич */
+.feature-item {
+    text-align: center;
+}
+
+/* Заголовки в списке фич */
+.feature-item h3 { 
+    font-size: 30px;
+    line-height: 42px;
+}
+
+/* Секции для блоков */
+.index-columns {
+    color: #000000; /*Текст чёрный*/
+
+    background-color: #f8f5f2;
+    background-image: url(../img/pattern-light.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+/* Для заголовков крупных секций */
+.index-columns h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+/*Блок новостей*/
+.news-list {
+    list-style: none;
+}
+
+/* Дата новости не заглавными */
+.news-item time{
+    text-transform: none;
+}
+
+/*Рамка для картинки в галерее*/
+.gallery-content {
+    background-color: #cccccc;
+    border: 7px solid #ffffff; /*Solid - полная заливка*/
+}
+
+/* Каждый элемент-инпут для записи */
+.appointment-item input {
+    font: inherit;
+
+    background-color: transparent; /*Прозрачный*/
+    border: 2px solid #000000; /*Solid - полная заливка*/
+}
+
+/* Когда инпут в фокусе */
+.appointment-item input:focus {
+    border-color: #663d15;
+}
+
+/*Футер*/
+.main-footer {
+    color: #ffffff;
+
+    background-color: #212121;
+    background-image: url(../img/pattern-dark.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+/*Контакты футера*/
+.footer-contacts a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    text-decoration: none;
+}
+
+/* Соц.сети */
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button {
+    color: #ffffff;
+}
+
+/*Копирайт футера*/
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+/* Модальные окна */
+.modal {
+    color: #000000;
+
+    background-color: f8f3f0;
+    background-image: url(../img/pattern-light.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.modal h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+/* Форма логина */
+.login-form input[type="text"], /*Обрати внимание, что можно для каждого отдельного инпута*/
+.login-form input[type="password"] {
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: f9f6f3;
+    border: 2px solid #000000;
+}
+
+.login-form input:focus {
+    border-color: #663d15;
+}
+
+.input-checkbox:hover,
+.input-checkbox:focus {
+    color: #663d15;
+}
+
+.restore {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+    text-decoration: none;
+}
