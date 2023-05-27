@@ -23,13 +23,13 @@
             </ul>
             <ul>
                 <li>
-                    <button type="button">Войти</button>
+                    <a href="login.html">Вход</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Барбершоп Бородинский</h1> <!--Этот тег не будет виден на самой странице-->>
+        <h1>Барбершоп Бородинский</h1> <!--Этот тег не будет виден на самой странице-->
 
         <section>
             <h2>Преимущества</h2> <!--Заголовок второго уровня как название раздела, тоже не виден.-->
@@ -84,8 +84,8 @@
                 </a>
                 <figcaption>Интерьер</figcaption>
             </figure>
-            <button type="button">Вперёд</button>
-            <button type="button">Назад</button>
+            <button type="button">Вперёд</button> <!--Не submit!-->
+            <button type="button">Назад</button> <!--Не submit!-->
         </section>
 
         <section>
@@ -106,7 +106,30 @@
 
         <section>
             <h2>Записаться</h2>
-            <!--Здесь будет форма-->
+            <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label for="appointment-date">Дата</label>
+                    <input id="appointment-date" 
+                        type="date" name="date" value="2021-05-21">
+                </p>
+                <p>
+                    <label for="appointment-time">время</label>
+                    <input id="appointment-time" 
+                        type="time" name="time" value="10:00">
+                </p>
+                <p>
+                    <label for="appointment-name">Ваше имя</label>
+                    <input id="appointment-name" 
+                        type="text" name="name" value="" placeholder="Денис">
+                </p>
+                <p>
+                    <label for="appointment-phone">Телефон</label>
+                    <input id="appointment-phone" 
+                        type="tel" name="phone" value="" placeholder="+7 800 555-35-35">
+                </p>
+                <button type="submit">Отправить</button>
+            </form>
         </section>
     </main>
     <footer>
@@ -133,12 +156,35 @@
     <section>
         <h2>Личный кабинет</h2>
         <p>Введите свой логин и пароль.</p>
-        <!--Здесь будет форма-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="user-login">Логин</label>
+                <input id="user-login"
+                    type="email" name="login" placeholder="email@example.ru">
+            </p>
+            <p>
+                <label for="user-password">Пароль</label>
+                <input id="user-password"
+                    type="password" name="password" placeholder="**********">
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="remember">
+                        Запомнить меня
+                </label>
+                <a href="#">Я забыл пароль!</a>
+            </p>
+            <button type="submit">Войти</button>
+        </form>
         <button type="button">Закрыть</button>
     </section>
 
     <section>
         <h2>Как до нас добраться</h2>
+        <p>
+            <img src="img/map.jpg" width="780"
+                alt="Офис компании по адресу такому-то">
+        </p>
         <button type="button">Закрыть</button>
     </section>
 </body>
