@@ -20,6 +20,12 @@ body {
     background-repeat: no-repeat; /*Не замостить*/
 }
 
+.container { /* универсальный контейнер */
+    width: 940px; /* ширина по макету */
+    margin: 0 auto; /* для выравнивания по центру */
+    padding: 0 10px; /* хуй его знает */
+}
+
 a {
     text-decoration: none; /*Ссылки без нижнего подчёркивания*/
 }
@@ -246,12 +252,6 @@ body { /* Ширина и высота для всего сайта */
     min-height: 1750px;
 }
 
-.container { /* для контейнера навигации */
-    width: 940px; /* ширина по макету */
-    margin: 0 auto; /* для выравнивания по центру */
-    padding: 0 10px; /* хуй его знает */
-}
-
 .main-header { /* Для всего хэдера */
     margin-bottom: 75px; /* Для отступа к ниж. элементаи */
 
@@ -312,3 +312,31 @@ body { /* Ширина и высота для всего сайта */
     min-height: 70px;
 }
 
+.features-list { /* Лист фич, Который в секции фичи */
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    min-height: 170px; /* временно */
+}
+
+.feature-item { /* Каждый пункт в списке фич */
+    width: 300px; /* Ширина каждой фичи */
+
+    min-height: 170px; /* временно */
+}
+
+.index-columns { /* Для двух смежных обёрнутых секций */
+    
+
+}
+
+.news {
+    min-height: 315px;
+}
+
+.gallery {
+    min-height: 315px;
+}
